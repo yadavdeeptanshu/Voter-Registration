@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Voter</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<style>
+		.btn{
+			
+			width: 30px;
+			height: 10px;
+			font-size: 15px;
+		}
+		.footer {
+		
+		height: 70px;
+		width: 100%;
+		background-color: #070707;
+		color: #A9A9A9;
+		text-align: center;
+		padding-top: 20px;
+		margin-top:5px;
+		
+		}
+		.opt
+		{
+			background-color: #6c757d;
+			margin-left:  5px;
+			margin-right: 5px;
+			color:white;
+		}
+		.sp
+		{
+			color: red;
+			padding-right: 5px;
+		}
+		.lbl
+		{
+			padding-left: 110px;
+		}
+		.inp
+		{
+			margin-right: 15px;
+			height: 25px;
+			text-align: center;
+		}
+		
+		.sidebtn
+		{
+			background-color: #898989;
+			height:35px;
+			width:60px;
+			margin:10px;
+			font-size:15px;
+			color:#290000;
+		}
+		#btnsubmit
+		{
+			background-color: #28A745;
+		
+			color:white;
+			margin-left: 0px;
+			font-weight: bold;
+			padding-right:10px;
+			padding-left:5px;
+			padding-top:5px;
+			padding-bottom:5px;
+			border-radius: 7px;
+		}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar  bg-dark">
+			<img src='flagimg.jpg' height='80' width='110' alt='flag' style="border-radius: 1px;">
+			<h3 style="color:white">राष्ट्रीय मतदान सेवा <br/><center>  डेमो पोर्टल</center></h3>
+			<h3 style="color:white">NATIONAL VOTERS' SERVICES <br/><center>DEMO  PORTAL</center></h3>
+			<img src="vote.png" height="80" width="110" alt="vote" style="border-radius: 5px;">
+		</nav>
+		<div style="margin: 2px; border-style: ridge;padding: 6px;">
+			<button type="button"  style="margin-left: 80px; width:70px; height:25px; background-color:#6c757d;border-radius: 5px;color:white">A+</button>
+			<button type="button"  style="margin-left: 60px; width:70px; height:25px; background-color:#6c757d;border-radius: 5px;color:white; ">A-</button>
+			<select  style="float:right;margin-right:40px;background-color: #6c757d;margin-right: 25px;margin-top: 5px; width:130px;padding-left: 20px; border-radius: 5px;color:white">
+				<option>English</option>
+				<option>Hindi</option></select>
+				<label style="float:right; margin-right:50px;margin-top: 5px">Select Language :</label>
+			</div>
+			<div class="fluid-container">
+				<div class="row">
+					<div class="col-sm-1"></div>
+					<div class="col-sm-7"><h4 style="color:#A53431">Note: Fields marked with asterisks ( <span class="sp">*</span> )are mandatory</h4></div>
+				</div>
+			</div>
+			<div class="container" style="background-color: #EEEEEE">
+				<div style="background-color:#C7C5C5">
+					<strong><p style="padding: 10px">Type 6 <br/>[See rule 13(1) and 26]</p></strong>
+					<p style="padding: 10px;background-color:#D79281;">Application for inclusion of name in the electoral roll for the first time due to the transfer of voter or any other <br/>constituency from any one constituency</p>
+				</div>
+				<p style="padding: 10px">In service <br/><br/>Electoral Registration Officer,</p>
+				<form>
+					<label style="padding-left: 110px;padding-right: 15px;">State<span class="sp">*</span></label><select class="opt"><option>select</option></select>
+					<label style="padding-left: 110px;padding-right: 20px;">District</label><select class="opt"><option>select</option></select><br/>
+					<label style="padding-left: 110px;padding-right: 20px;">Legislative Assembly / Parlimentary<br/>
+						constituency <span class="sp">*</span></label><select class="opt"><option>select</option></select><br/>
+						<p style="padding: 10px">I request that my name be included in electoral rolls for all the aforesaid areas. </p>
+						<input type="radio" style="margin-left: 110px;" name="rad1"> First time voter<br/>
+						<input type="radio" style="margin-left: 110px;" name="rad1"> Due to transfer from other meeting areas.
+						<p style="padding: 10px">Below are specifications in support of my claim to be included in the electoral rolls.</p>
+						
+						<div style="background-color:#C7C5C5">
+							<p style="padding: 10px;background-color:#D79281;">Mandatory specifications</p>
+						</div>
+						<form><label class="lbl">(A) Name<span class="sp">* </span></label><input type="text" placeholder="(In English)" class="inp" required="true" >  <input type="text" placeholder="(In Regional)" class="inp" required="true" ><input type="submit" value="&#128436" class="sidebtn" ></form><br/>
+						<form><label class="lbl">(B) Surname (if any) <span class="sp">* </span></label><input type="text" required="true" placeholder="(In English)" class="inp">  <input type="text" required="true" placeholder="(In Regional)" class="inp"><input type="submit" value="&#128436" class="sidebtn"></form><br/>
+						<form><label class="lbl">C) Name of the applicant's relative <span class="sp">* </span></label><input type="text" required="true" placeholder="(In English)" class="inp">  <input type="text" required="true" placeholder="(In Regional)" class="inp"><input type="submit" value="&#128436" class="sidebtn"></form><br/>
+						<form><label class="lbl">Nickname of the applicant's relative<span class="sp">* </span></label><input type="text" placeholder="(In English)" class="inp" required="true">  <input type="text" placeholder="(In Regional)" class="inp" required="true"><input type="submit" value="&#128436" class="sidebtn"></form><br/>
+						<label style="padding-left: 110px;padding-right: 15px;">(D) Type of the relationship <span class="sp">*</span></label><select class="opt"><option>select</option></select><br/><br/>
+						<input type="radio" style="margin-left: 110px;" name="rad2"><label  style="margin-left: 5px;">(E) Age [on January 1 of the current calender]<span class="sp">* </span></label><input type="text" class="inp" placeholder="2019" readonly="true" style="text-align: left;">
+						<select  style="background-color: #6c757d;margin-top: 5px; width:70px;padding-left: 10px; border-radius: 5px;color:white">
+							<option>Year</option>
+						</select>
+						<select  style="background-color: #6c757d;margin-top: 5px; width:70px;padding-left: 10px; border-radius: 5px;color:white">
+							<option>Month</option>
+						</select>
+						<p style="padding-left: 110px">Or</p>
+						
+						<input type="radio" style="margin-left: 110px;" name="rad2"><label>(F) Date of birth (in the form of day/ month/ year) <input type="date" class="inp"></label><br/>
+						<label class="lbl">(if known)<span class="sp">* </span></label><br/><br/>
+						<label style="padding-left: 110px;padding-right: 15px;">(G) Applicant's gender <span class="sp">*</span></label><select class="opt"><option>select</option></select><br/><br/>
+						<div style="background-color:#C7C5C5">
+							<p style="padding: 10px;background-color:#D79281;">(H) Current address, whose applicant is nominally resident</p>
+						</div>
+						<form><label class="lbl">House no<span class="sp">* </span></label><input type="text" placeholder="(In English)" class="inp" required="true">  <input type="text" placeholder="(In Regional)" class="inp" required="true"><input type="submit" value="&#128436" class="sidebtn"></form><br/>
+						<form><label class="lbl">Street / area / location<span class="sp">* </span></label><input type="text" placeholder="(In English)" class="inp" required="true">  <input type="text" placeholder="(In Regional)" class="inp" required="true"><input type="submit" value="&#128436" class="sidebtn"></form><br/>
+						<form><label class="lbl">City / Village<span class="sp">* </span></label><input type="text" placeholder="(In English)" class="inp" required="true">  <input type="text" placeholder="(In Regional)" class="inp" required="true"><input type="submit" value="&#128436" class="sidebtn"></form><br/>
+						<form><label class="lbl">Post Office<span class="sp">* </span></label><input type="text" placeholder="(In English)" class="inp" required="true">  <input type="text" placeholder="(In Regional)" class="inp" required="true"><input type="submit" value="&#128436" class="sidebtn"></form><br/>
+						<label class="lbl">Pin Code<span class="sp">* </span></label><input type="text"  class="inp" required="true"> <br/><br/>
+						<label style="padding-left: 110px;padding-right: 15px;">State / Union Territory <span class="sp">*</span></label><select class="opt"><option>select</option></select><br/><br/>
+						<label style="padding-left: 110px;padding-right: 15px;">District<span class="sp">*</span></label><select class="opt"><option>select</option></select><br/><br/>
+						<hr>
+						<label class="lbl">Family / Neighbour Epic No <input type="text" class="inp"></label>
+						<hr>
+						<div style="background-color:#C7C5C5">
+							<p style="padding: 10px;background-color:#D79281;">Optional specialties</p>
+						</div>
+						<p style="padding-left: 110px;">(T) Disability (if any)</p><br/>
+						<input type="radio" style="margin-left: 110px; margin-right: 5px;" name="rad3">Visual impairment <input type="radio" style="margin-right: 5px;" name="rad3">Speech and hearing impairment <input type="radio" style="margin-right: 5px;" name="rad3">Motion disabling <input type="radio"style="margin-right: 5px;" name="rad3">Other <input type="text" class="inp" ><br/><br/>
+						<label class="lbl">(Th) Email ID (optional)</label><input type="text" class="inp"><br/><br/>
+						<label class="lbl">(D) mobile number (optional)   +91 </label><input type="text" class="inp"><br/><br/>
+						<div style="background-color:#C7C5C5">
+							<p style="padding: 10px;background-color:#D79281;">Upload supporting documents (Supported formats .jpg, .png, .bmp, .jpeg) (max. 2MB)<a href="#" style="float:right">List of supported documents</a></p>
+						</div>
+						<p style="padding-left: 110px;">Your photo <span class="sp">*</span>
+						<br/><input type="file"><br/>
+						Age proof <span class="sp">*</span>
+						<br/><input type="file">
+						<label style="padding-right: 15px;" class="lbl"> Document type<span class="sp">*</span></label><select class="opt"><option>select</option></select><br/>
+						Adress proof <span class="sp">*</span><br/><input type="file">
+						<label style="padding-right: 15px;" class="lbl"> Document type<span class="sp">*</span></label><select class="opt"><option>select</option></select>
+					</p>
+					<div style="background-color:#C7C5C5">
+						<p style="padding: 10px;background-color:#D79281;">Declaration</p>
+					</div>
+					
+					<p style="padding: 10px;">I declare I declare that according to my best knowledge and belief <br/>
+					I am a citizen of India and of my birth; </p>
+					<label class="lbl">City / Village: </label><input type="text" class="inp"><br/><br/>
+					<label style="padding-right: 10px;" class="lbl">State<span class="sp">*</span></label><select class="opt"><option>select</option></select>
+					<label style="padding-right: 10px;" class="lbl">District<span class="sp">*</span></label><select class="opt"><option>select</option></select><br/>
+					<label class="lbl">Date<span class="sp">*</span> </label><input type="Date" class="inp"><br/>
+					<p style="padding: 10px;">(ii) I am a nominally resident in the address given in the above (date, month, year) above; <br/><br/>
+					I have not applied to include my name in the electoral roll for any other constituency;</p>
+					<input type="radio" style="margin-left: 110px;" name="rad4"><label>iv) My name has not been already included in the electoral roll for this or any other assembly / parliamentary constituency</label><br/><br/>
+					<p style="padding-left: 110px">Or</p>
+					
+					<input type="radio" style="margin-left: 110px;" name="rad4"><label>My name would have been included in electoral rolls of the State's constituency, in which I was already residing in the address mentioned</label><br/><label class="lbl"> below, and if so, then I request that it be removed from that electoral roll. Go.</label><br/><br/>
+					<hr>
+					<label class="lbl">Location<span class="sp">* </span></label><input type="text" class="inp">
+					<label class="lbl">date </label><input type="date" class="inp" style="margin-left: 5px;"><br/><br/>
+					<p style="padding-left: 10px;">I am afraid that the statement or declaration, which is false, to whom I know it or believe that it is false or I do not believe in being true, the People's<br/> Representation Act, 1950 (43 of 1950 ) Is punishable under section 31 </p>
+					<label class="lbl" style="padding-right: 5px;">Captcha <img src="captcha.png" width="110" height="35"><span style="margin:10px;">&#8635;</span>
+					<input type="text" class="inp"><br/><br/>
+					<table>
+						<tr>
+							<td><button type="reset"  value="Reset" style="margin-left: 270px;" id="btnsubmit" >Reset</button></td>
+							<td><button type="submit"  value="Reset" id="btnsubmit">Submit</button></td>
+						</tr>
+					</table>
+					
+				</form>
+				
+			</div>
+			<div class="footer">
+				<p>Copyright © 2019 Suven Consultants and Technology Pvt. Ltd.</p></
+			</div>
+		</body>
+	</html>
